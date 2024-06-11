@@ -3,7 +3,7 @@ package io.mcarle.konvert.api
 import kotlin.reflect.KClass
 
 @Retention(AnnotationRetention.SOURCE)
-@Target(AnnotationTarget.FUNCTION)
+@Target(AnnotationTarget.FUNCTION, AnnotationTarget.ANNOTATION_CLASS)
 annotation class Konvert(
     /**
      * List of user defined mappings for non-default use-cases.
